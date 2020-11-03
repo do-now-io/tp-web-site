@@ -5,4 +5,4 @@ let numberOfFilms = 25;
 
 for (i = 0; i < numberOfFilms; i++) {
     console.log("film"+ i);
-}
+};
