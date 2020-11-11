@@ -2,6 +2,9 @@
   <div class="row">
     <div class="col-xs-12">
       <h2>Mes appareils</h2>
+
+      <p>Mise à jour : {{ lastUpdate | date }}</p>
+
       <ul class="list-group">
         <app-appareil  *ngFor="let appareil of appareils"
                        [appareilName]="appareil.name"
@@ -10,6 +13,29 @@
       <button class="btn btn-success"
               [disabled]="!isAuth"
               (click)="onAllumer()">Tout allumer</button>
+    </div>
+  </div>
+</div>
+<br><br>
+<div class="container">
+  <div class="row">
+    <div class="col-xs-6">
+      <p>
+        git status //voir ou tu en est
+        <br>
+        git log //voir les commits sur la branche ou tu est
+        git add $TONFICHIER // permet d'ajouter $TONFICHER en mode tracker (prêt à être commité)
+        <br>
+        git commit -m "MON SUPER MESSAGE" // créer le commit
+        <br>
+        git push //push ta branche et tes commits sur un serveur à distance
+        <br>
+        git pull //récupérer les commits à distance en local
+        <br>
+        git checkout // permet de déplacer de branche en branche
+        <br>
+        git branch // permet de voir sur quel branche tu es et situ rajoutes un nom ça te créé une branche
+      </p>
     </div>
   </div>
 </div>
