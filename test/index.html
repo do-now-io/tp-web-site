@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ma calculatrice</title>
+</head>
+<body>
+    <form>
+
+        <input type="number" name="nbr1" id="nbr1">
+        <input type="number" name="nbr2" id="nbr2">
+
+        <button type="submit" name="submit" value="Addition" id="addition" onclick="return calcul();">Addition</button>
+
+           
+    </form>
+
+    <script type="text/javascript">
+        let number1=nbr1;
+        let number2=nbr2;
+        let result= calcul();
+        
+        
+        calcul() {
+            result= nbr1 + nbr2;
+            
+        };
+        
+    </script>
+
+</body>
+</html>
